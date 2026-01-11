@@ -1,0 +1,55 @@
+﻿<UserControl x:Class="UnoApp1.Views.StartPage_Section05" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition x:Name="ColumnDefinition1" />
+			<ColumnDefinition x:Name="ColumnDefinition2" />
+			<ColumnDefinition x:Name="ColumnDefinition3" />
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+		</Grid.RowDefinitions>
+		<Border Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" CornerRadius="12">
+			<Image Source="{x:Bind ImageSource}" />
+		</Border>
+		<StackPanel x:Name="Panel" VerticalAlignment="Center">
+			<TextBlock x:Name="Header" x:Uid="CDO119" Style="{StaticResource MediumLarginoTextBlock}" />
+			<TextBlock x:Name="Text" x:Uid="SES100" Margin="0,12,0,0" Style="{StaticResource MediumTextBlock}" />
+			<HyperlinkButton x:Uid="FIM877" Margin="0,16,0,0" Style="{StaticResource MediumHyperlinkButton}" Click="HyperlinkButton_Click"/>
+		</StackPanel>
+		<VisualStateManager.VisualStateGroups>
+			<VisualStateGroup>
+				<VisualState>
+					<VisualState.StateTriggers>
+						<AdaptiveTrigger MinWindowWidth="0" />
+					</VisualState.StateTriggers>
+					<VisualState.Setters>
+						<Setter Target="ColumnDefinition1.Width" Value="*" />
+						<Setter Target="ColumnDefinition2.Width" Value="0" />
+						<Setter Target="ColumnDefinition3.Width" Value="*" />
+						<Setter Target="Panel.(Grid.Column)" Value="0" />
+						<Setter Target="Panel.(Grid.ColumnSpan)" Value="3" />
+						<Setter Target="Panel.(Grid.Row)" Value="1" />
+						<Setter Target="Panel.HorizontalAlignment" Value="Left" />
+						<Setter Target="Panel.Margin" Value="0,24,0,0" />
+					</VisualState.Setters>
+				</VisualState>
+				<VisualState>
+					<VisualState.StateTriggers>
+						<AdaptiveTrigger MinWindowWidth="499" />
+					</VisualState.StateTriggers>
+					<VisualState.Setters>
+						<Setter Target="ColumnDefinition1.Width" Value="*" />
+						<Setter Target="ColumnDefinition2.Width" Value="0.25*" />
+						<Setter Target="ColumnDefinition3.Width" Value="*" />
+						<Setter Target="Panel.(Grid.Column)" Value="2" />
+						<Setter Target="Panel.(Grid.ColumnSpan)" Value="1" />
+						<Setter Target="Panel.(Grid.Row)" Value="0" />
+						<Setter Target="Panel.HorizontalAlignment" Value="Center" />
+						<Setter Target="Panel.Margin" Value="0,24,0,0" />
+					</VisualState.Setters>
+				</VisualState>
+			</VisualStateGroup>
+		</VisualStateManager.VisualStateGroups>
+	</Grid>
+</UserControl>

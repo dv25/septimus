@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <script type="text/javascript" src="./require.js"></script>
+    <script type="module" src="./uno-bootstrap.js"></script>
+    $(ADDITIONAL_CSS)
+    $(ADDITIONAL_HEAD)
+
+    <style>
+    :root {
+        --splash-background: #ffffff; /* default light */
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --splash-background: #000028; /* dark mode */
+        }
+    }
+
+html, body, .splash-screen, .splash-progress {
+    background: var(--splash-background) !important;
+}
+
+ #uno-body {
+            opacity: 0;
+            transition: opacity 750ms ease-in;
+        }
+}
+
+</style>
+
+
+</head>
+<body>
+    <div id="uno-body" class="container-fluid uno-body">
+
+    </div>
+    <noscript>
+        <p>This application requires Javascript and WebAssembly to be enabled.</p>
+    </noscript>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const root = document.getElementById("uno-body");
+            if (!root) return;
+
+            setTimeout(() => {
+            root.style.opacity = "1";
+            }, 1000); 
+        });
+</script>
+</body>
+</html>

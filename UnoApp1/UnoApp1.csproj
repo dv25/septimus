@@ -1,0 +1,299 @@
+﻿<Project Sdk="Uno.Sdk">
+    <PropertyGroup>
+        <TargetFrameworks>net10.0-windows10.0.26100;net10.0-browserwasm</TargetFrameworks>
+
+        <OutputType>Exe</OutputType>
+        <UnoSingleProject>true</UnoSingleProject>
+
+        <!-- Display name -->
+        <ApplicationTitle>UnoApp1</ApplicationTitle>
+        <!-- App Identifier -->
+        <ApplicationId>com.companyname.UnoApp1</ApplicationId>
+        <!-- Versions -->
+        <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+        <ApplicationVersion>1</ApplicationVersion>
+        <!-- Package Publisher -->
+        <ApplicationPublisher>frams</ApplicationPublisher>
+        <!-- Package Description -->
+        <Description>UnoApp1 powered by Uno Platform.</Description>
+        <!--
+      If you encounter this error message:
+
+        error NETSDK1148: A referenced assembly was compiled using a newer version of Microsoft.Windows.SDK.NET.dll.
+        Please update to a newer .NET SDK in order to reference this assembly.
+
+      This means that the two packages below must be aligned with the "build" version number of
+      the "Microsoft.Windows.SDK.BuildTools" package above, and the "revision" version number
+      must be the highest found in https://www.nuget.org/packages/Microsoft.Windows.SDK.NET.Ref.
+    -->
+        <!-- <WindowsSdkPackageVersion>10.0.22621.28</WindowsSdkPackageVersion> -->
+
+        <!--
+      UnoFeatures are used to quickly add and manage features enabled for your app.
+      https://aka.platform.uno/singleproject-features
+    -->
+        <UnoFeatures>
+        </UnoFeatures>
+        <DefaultLanguage>en</DefaultLanguage>
+        <WasmShellIndexHtmlPath>index.html</WasmShellIndexHtmlPath>
+    </PropertyGroup>
+    <ItemGroup>
+      <None Remove="Fonts\Font Awesome 6 Brands-Regular-400.otf" />
+      <None Remove="Fonts\Font Awesome 6 Pro-Regular-400.otf" />
+      <None Remove="Fonts\Font Awesome 6 Pro-Thin-100.otf" />
+      <None Remove="Fonts\Moderat-Bold.ttf" />
+      <None Remove="Fonts\Moderat-Light.ttf" />
+      <None Remove="Fonts\Moderat-Medium.ttf" />
+      <None Remove="Fonts\Moderat-Regular.ttf" />
+      <None Remove="Fonts\Moderat-Thin.ttf" />
+      <None Remove="Images\Bla.jpg" />
+      <None Remove="Images\Bla2.jpg" />
+      <None Remove="Images\Bla3.jpg" />
+      <None Remove="Images\Jv1.jpg" />
+      <None Remove="Images\Jv2.jpg" />
+      <None Remove="Images\Jv3.jpg" />
+      <None Remove="Images\Logo.png" />
+      <None Remove="Images\Logo2.png" />
+      <None Remove="Images\StarHero.jpg" />
+      <None Remove="Pages\AboutPage.xaml" />
+      <None Remove="Pages\ContactUsPage.xaml" />
+      <None Remove="Pages\FaqPage.xaml" />
+      <None Remove="Pages\StartPage.xaml" />
+      <None Remove="Pages\VacantAssignmentsPage.xaml" />
+      <None Remove="Pages\WhatWeDoPage.xaml" />
+      <None Remove="Views\AboutPage_Section01.xaml" />
+      <None Remove="Views\AboutPage_Section02.xaml" />
+      <None Remove="Views\AboutPage_Section03.xaml" />
+      <None Remove="Views\ContactUs_Section01.xaml" />
+      <None Remove="Views\FaqPage_Section01.xaml" />
+      <None Remove="Views\FaqPage_Section02.xaml" />
+      <None Remove="Views\FaqPage_Section02_Expander.xaml" />
+      <None Remove="Views\RootView.xaml" />
+      <None Remove="Views\Scrolly.xaml" />
+      <None Remove="Views\StartPage_Section03.xaml" />
+      <None Remove="Views\StartPage_Section04.xaml" />
+      <None Remove="Views\StartPage_Section05.xaml" />
+      <None Remove="Views\StartPage_Section07.xaml" />
+      <None Remove="Views\VacantAssignmentsPage_Section01.xaml" />
+      <None Remove="Views\WhatWeDoPage_Section01.xaml" />
+      <None Remove="Views\WhatWeDoPage_Section02.xaml" />
+      <None Remove="Views\WhatWeDoPage_Section03.xaml" />
+      <None Remove="Views\WhatWeDoPage_Section04.xaml" />
+      <None Remove="Views\WhatWeDoPage_Section05.xaml" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="Fonts\Font Awesome 6 Brands-Regular-400.otf" />
+      <Content Include="Fonts\Font Awesome 6 Pro-Regular-400.otf" />
+      <Content Include="Fonts\Font Awesome 6 Pro-Thin-100.otf" />
+      <Content Include="Fonts\Moderat-Bold.ttf" />
+      <Content Include="Fonts\Moderat-Light.ttf" />
+      <Content Include="Fonts\Moderat-Medium.ttf" />
+      <Content Include="Fonts\Moderat-Regular.ttf" />
+      <Content Include="Fonts\Moderat-Thin.ttf" />
+      <Content Include="Images\Bla2.jpg" />
+      <Content Include="Images\Bla3.jpg" />
+      <Content Include="Images\Jv1.jpg" />
+      <Content Include="Images\Jv2.jpg" />
+      <Content Include="Images\Jv3.jpg" />
+      <Content Include="Images\Logo.png" />
+      <Content Include="Images\Bla.jpg" />
+      <Content Include="Images\Logo2.png" />
+      <Content Include="Images\StarHero.jpg" />
+    </ItemGroup>
+    <ItemGroup>
+      <Compile Update="Views\RootView_Header.xaml.cs">
+        <DependentUpon>RootView_Header.xaml</DependentUpon>
+      </Compile>
+      <Compile Update="Views\StartPage_Section01.xaml.cs">
+        <DependentUpon>StartPage_Section01.xaml</DependentUpon>
+      </Compile>
+      <Compile Update="Views\StartPage_Section02.xaml.cs">
+        <DependentUpon>StartPage_Section02.xaml</DependentUpon>
+      </Compile>
+      <Compile Update="Views\StartPage_Section06.xaml.cs">
+        <DependentUpon>StartPage_Section06.xaml</DependentUpon>
+      </Compile>
+    </ItemGroup>
+    <ItemGroup>
+      <Page Update="Views\ContactUs_Section01.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+    </ItemGroup>
+    <ItemGroup>
+      <Page Update="Views\VacantAssignmentsPage_Section01.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+    </ItemGroup>
+    <ItemGroup>
+      <Page Update="Views\FaqPage_Section01.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+    </ItemGroup>
+    <ItemGroup>
+      <Page Update="Views\FaqPage_Section02_Expander.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+    </ItemGroup>
+    <ItemGroup>
+      <Page Update="Views\FaqPage_Section02.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+    </ItemGroup>
+    <ItemGroup>
+      <Page Update="Views\WhatWeDoPage_Section05.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+    </ItemGroup>
+    <ItemGroup>
+      <Page Update="Views\WhatWeDoPage_Section04.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+    </ItemGroup>
+    <ItemGroup>
+      <Page Update="Views\WhatWeDoPage_Section03.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+    </ItemGroup>
+    <ItemGroup>
+      <Page Update="Views\Scrolly.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+    </ItemGroup>
+    <ItemGroup>
+      <Page Update="Views\WhatWeDoPage_Section02.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+    </ItemGroup>
+    <ItemGroup>
+      <Page Update="Views\WhatWeDoPage_Section01.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+    </ItemGroup>
+    <ItemGroup>
+      <Page Update="Views\AboutPage_Section03.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+    </ItemGroup>
+    <ItemGroup>
+      <Page Update="Views\AboutPage_Section02.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+    </ItemGroup>
+    <ItemGroup>
+      <Page Update="Views\AboutPage_Section01.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+    </ItemGroup>
+    <ItemGroup>
+      <Page Update="Views\StartPage_Section07.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+    </ItemGroup>
+    <ItemGroup>
+      <Page Update="Views\StartPage_Section05.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+    </ItemGroup>
+    <ItemGroup>
+      <Page Update="Views\StartPage_Section04.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+    </ItemGroup>
+    <ItemGroup>
+      <Page Update="Views\StartPage_Section03.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+    </ItemGroup>
+    <ItemGroup>
+      <Page Update="Views\RootView.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+    </ItemGroup>
+    <ItemGroup>
+      <Page Update="Pages\AboutPage.xaml">
+        <Generator></Generator>
+      </Page>
+      <Page Update="Pages\ContactUsPage.xaml">
+        <Generator></Generator>
+      </Page>
+      <Page Update="Pages\FaqPage.xaml">
+        <Generator></Generator>
+      </Page>
+      <Page Update="Pages\StartPage.xaml">
+        <Generator></Generator>
+      </Page>
+      <Page Update="Pages\VacantAssignmentsPage.xaml">
+        <Generator></Generator>
+      </Page>
+      <Page Update="Pages\WhatWeDoPage.xaml">
+        <Generator></Generator>
+      </Page>
+      <Page Update="Views\Scrolly_Footer.xaml">
+        <Generator></Generator>
+      </Page>
+    </ItemGroup>
+    <ItemGroup>
+      <Page Update="Views\StartPage_Section06.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+    </ItemGroup>
+    <ItemGroup>
+      <Page Update="Views\StartPage_Section02.xaml">
+        <Generator></Generator>
+      </Page>
+    </ItemGroup>
+    <ItemGroup>
+      <Page Update="Views\RootView_Header.xaml">
+        <Generator></Generator>
+      </Page>
+    </ItemGroup>
+    <ItemGroup>
+      <Page Update="Views\StartPage_Section01.xaml">
+        <SubType>Designer</SubType>
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+    </ItemGroup>
+    <ItemGroup>
+      <UnoImage Remove="Assets\Splash\splash_screen.svg" />
+    </ItemGroup>
+    <ItemGroup>
+      <UnoImage Update="Assets\Splash\asplash_screen.svg" Link="Assets\asplash_screen.svg" />
+    </ItemGroup>
+    <ItemGroup>
+      <Page Update="Styles\Styles_Buttons.xaml">
+        <SubType>Designer</SubType>
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+    </ItemGroup>
+    <ItemGroup>
+      <Page Update="Styles\Styles_Expanders.xaml">
+        <SubType>Designer</SubType>
+      </Page>
+    </ItemGroup>
+    <ItemGroup>
+      <Page Update="Styles\Styles_FontFamilies.xaml">
+        <SubType>Designer</SubType>
+      </Page>
+    </ItemGroup>
+    <ItemGroup>
+      <Page Update="Styles\Styles_FontIcons.xaml">
+        <SubType>Designer</SubType>
+      </Page>
+    </ItemGroup>
+    <ItemGroup>
+      <Page Update="Styles\Styles_HyperlinkButtons.xaml">
+        <SubType>Designer</SubType>
+      </Page>
+    </ItemGroup>
+    <ItemGroup>
+      <Page Update="Styles\Styles_TextBlocks.xaml">
+        <Generator></Generator>
+      </Page>
+    </ItemGroup>
+    <ItemGroup>
+      <Page Update="Styles\Styles.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+    </ItemGroup>
+
+</Project>

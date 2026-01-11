@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="UnoApp1.Views.Scrolly" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:uv="using:UnoApp1.Views">
+	<ScrollViewer x:Name="MainScrollViewer">
+		<Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="0.085*" />
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="0.085*" />
+			</Grid.ColumnDefinitions>
+			<StackPanel Grid.Column="1" MaxWidth="1440">
+				<StackPanel x:Name="PART_Panel" Padding="0,164,0,0"/>
+				<uv:FooterView Margin="0,100,0,0" />
+			</StackPanel>
+		</Grid>
+	</ScrollViewer>
+</UserControl>

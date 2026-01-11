@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="UnoApp1.Views.WhatWeDoPage_Section05" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<StackPanel Spacing="20">
+		<TextBlock x:Uid="PPO991" Style="{StaticResource MediumLarginoTextBlock}" />
+		<TextBlock x:Uid="HPE991" MaxWidth="1000" HorizontalAlignment="Left" Style="{StaticResource MediumTextBlock}" />
+		<TextBlock x:Uid="VXC761" Margin="0,40,0,0" Style="{StaticResource MediumMediumTextBlock}" />
+		<TextBlock x:Uid="AZB887" Style="{StaticResource MediumTextBlock}" />
+		<Grid Margin="0,40,0,0" ColumnSpacing="20" RowSpacing="20">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="*" />
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+			</Grid.RowDefinitions>
+			<TextBlock x:Uid="VGU981" Grid.Row="0" Grid.Column="0" Style="{StaticResource MediumMediumTextBlock}" />
+			<TextBlock x:Uid="TTQ187" Grid.Row="1" Grid.Column="0" MaxWidth="499" HorizontalAlignment="Left" Style="{StaticResource MediumTextBlock}" />
+			<TextBlock x:Uid="GPL100" Grid.Row="0" Grid.Column="1" Style="{StaticResource MediumMediumTextBlock}" />
+			<TextBlock x:Uid="VBM554" Grid.Row="1" Grid.Column="1" MaxWidth="499" HorizontalAlignment="Left" Style="{StaticResource MediumTextBlock}" />
+		</Grid>
+	</StackPanel>
+</UserControl>

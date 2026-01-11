@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AZK234.Content" xml:space="preserve">
+    <value>Kontakt</value>
+  </data>
+  <data name="ApplicationName" xml:space="preserve">
+    <value>UnoApp7-sv</value>
+  </data>
+  <data name="CKL781.Content" xml:space="preserve">
+    <value>Så jobbar vi</value>
+  </data>
+  <data name="DPM876.Content" xml:space="preserve">
+    <value>Om Septimus</value>
+  </data>
+  <data name="HIP692.Content" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="JKL126.Content" xml:space="preserve">
+    <value>Lediga uppdrag</value>
+  </data>
+  <data name="UIP710.Content" xml:space="preserve">
+    <value>FAQ</value>
+  </data>
+  <data name="ZDK891.Content" xml:space="preserve">
+    <value>&gt;</value>
+  </data>
+  <data name="GYP871.Content" xml:space="preserve">
+    <value>&lt;</value>
+  </data>
+  <data name="TYO651.Header" xml:space="preserve">
+    <value>Vi agerar för dig</value>
+  </data>
+  <data name="TYO651.Text" xml:space="preserve">
+    <value>Tekniken håller på att omforma rekrytering till en snabbare och mer intelligent disciplin.</value>
+  </data>
+  <data name="HGP542.Text" xml:space="preserve">
+    <value>Imagine</value>
+  </data>
+  <data name="GFI604.Text" xml:space="preserve">
+    <value>Vi gör vårt yttersta för att förverkliga dina yrkesdrömmar...</value>
+  </data>
+  <data name="FDE768.Text" xml:space="preserve">
+    <value>genom att våga tro på din kompetens hjälper vi dig...</value>
+  </data>
+  <data name="IOP372.Text" xml:space="preserve">
+    <value>Prepare</value>
+  </data>
+  <data name="FDO682.Text" xml:space="preserve">
+    <value>att tillsammans agera för din karriär.</value>
+  </data>
+  <data name="YPK891.Text" xml:space="preserve">
+    <value>Execute</value>
+  </data>
+  <data name="GFR109.Text" xml:space="preserve">
+    <value>OM OSS</value>
+  </data>
+  <data name="DFG165.Text" xml:space="preserve">
+    <value>Rekrytering i en ny teknisk era.</value>
+  </data>
+  <data name="DBV176.Text" xml:space="preserve">
+    <value>Tekniken håller på att omforma rekrytering till en snabbare och mer intelligent disciplin,
+och förändrar hur organisationer hittar talanger och hur kandidater upplever sin resa,
+med digitala verktyg som effektiviserar processer som tidigare var helt manuella,
+vilket gör att rekryterare kan flytta fokus från administration till mänskliga möten.</value>
+  </data>
+  <data name="FIM877.Content" xml:space="preserve">
+    <value>Läs mer</value>
+  </data>
+  <data name="AWH591.Header" xml:space="preserve">
+    <value>Såhär jobbar vi</value>
+  </data>
+  <data name="SES100.Text" xml:space="preserve">
+    <value>Vi arbetar intensivt för att lära känna människan bakom ett CV.
+
+Vi prioriterar dig och din karriär.</value>
+  </data>
+  <data name="HOP879.Header" xml:space="preserve">
+    <value>Lediga uppdrag</value>
+  </data>
+  <data name="FED189.Text" xml:space="preserve">
+    <value>Inga jobb hittades</value>
+  </data>
+  <data name="CXI887.Text" xml:space="preserve">
+    <value>Spontanansökan- Vi är alltid på jakt efter nya talanger.</value>
+  </data>
+  <data name="FEI998.Content" xml:space="preserve">
+    <value>Skicka din ansökan</value>
+  </data>
+  <data name="GRT148.Text" xml:space="preserve">
+    <value>Kontakt</value>
+  </data>
+  <data name="VBK800.Text" xml:space="preserve">
+    <value>Vill du komma i kontakt med oss? Hör gärna av dig.</value>
+  </data>
+  <data name="AQP980.Content" xml:space="preserve">
+    <value>Kontakta oss</value>
+  </data>
+  <data name="BNM103.Text" xml:space="preserve">
+    <value>Septimus värdesätter individen, dess arbetslivserfarenhet samt karriärsutveckling.</value>
+  </data>
+  <data name="GHO998.Content" xml:space="preserve">
+    <value>01 - 234567</value>
+  </data>
+  <data name="GFD103.Text" xml:space="preserve">
+    <value>Genom att skapa och bibehålla meningsfulla relationer med våra samarbetspartners kan vi presentera en bred rad av arbetsmarknadens mest attraktiva karriärmöjligheter för våra medarbetare och kandidater. Septimus verkar inom de flesta branscherna, både inom privat och offentlig sektor. 
+
+Visioner och värderingar
+
+Vår vision är likvärdig chans till arbete för alla. Detta når vi genom att tillsammans med våra kandidater kartlägga kunskap, kompetens och erfarenhet varpå vi noggrant matchar dem mot spännande och utvecklande uppdrag.
+
+På Septimus värdesätter vi individen, dess arbetslivserfarenhet samt karriärutveckling. Hos oss är det högt i tak och ett inkluderande arbetsklimat där alla är välkomna.</value>
+  </data>
+  <data name="AWH591.Text" xml:space="preserve">
+    <value>Hos oss arbetar du tillsammans med kompetenta och drivna kollegor som stöttar och utvecklar våra konsulter. </value>
+  </data>
+  <data name="ZSU398.Text" xml:space="preserve">
+    <value>Rekryteringsprocess</value>
+  </data>
+  <data name="GOP791.Text" xml:space="preserve">
+    <value>Det är enkelt, våga åka med!</value>
+  </data>
+  <data name="CXO771.Text" xml:space="preserve">
+    <value>Genom en djupgående kartläggning av dina kunskaper och erfarenheter ser vi till att matcha dig med rätt uppdrag.</value>
+  </data>
+  <data name="VVH106.Text" xml:space="preserve">
+    <value>CV</value>
+  </data>
+  <data name="MNI184.Text" xml:space="preserve">
+    <value>Med hjälp av vår beprövade expertis utformar vi en kvalitativ och personlig profil vilken representerar dig.</value>
+  </data>
+  <data name="VVK199.Text" xml:space="preserve">
+    <value>Intervju</value>
+  </data>
+  <data name="FSE234.Text" xml:space="preserve">
+    <value>Vår övertygelse är att kombination mellan din kompetens och personlighet är det som får dig att lyckas på arbetsmarknaden. För oss betyder det att vi prioriterar att lära känna dig som person.</value>
+  </data>
+  <data name="GOQ877.Text" xml:space="preserve">
+    <value>Presentation</value>
+  </data>
+  <data name="XKO558.Text" xml:space="preserve">
+    <value>Med hjälp av den framtagna kunskapsinventeringen ser vi till att presentera dig med hög kvalité till våra kunder och samarbetspartners.</value>
+  </data>
+  <data name="PPO991.Text" xml:space="preserve">
+    <value>Välkommen ombord!</value>
+  </data>
+  <data name="HPE991.Text" xml:space="preserve">
+    <value>Efter en lyckad intervju hos kund blir du anställd av Septimus. Hos oss får du en personlig konsultchef som kommer att vägleda och stöta dig genom hela din tid hos oss både arbetsrelaterat men även personligt. Som anställd hos oss får du de verktyg du behöver för att ta dig an dina arbetsuppgifter på bästa sätt. Du träffar kontinuerligt din konsultchef, dels för uppföljning av uppdraget men även för din personliga utveckling och välmående. </value>
+  </data>
+  <data name="VXC761.Text" xml:space="preserve">
+    <value>Vi hjälper och handleder dig under resans gång.</value>
+  </data>
+  <data name="AZB887.Text" xml:space="preserve">
+    <value>Vi avsätter tid och engagemang på att kartlägga dina kunskaper och erfarenheter. Genom att alltid uppdatera ditt CV under uppdragets gång ser vi till att du är redo för nya utmaningar. 
+
+För att stärka din position på arbetsmarknaden ytterligare så är vi redo att investera i din kompetensutveckling genom att erbjuda dig utbildningar. </value>
+  </data>
+  <data name="VGU981.Text" xml:space="preserve">
+    <value>A safe working environment</value>
+  </data>
+  <data name="TTQ187.Text" xml:space="preserve">
+    <value>Vi gör alltid vårt yttersta för att skapa en trygg och stabil arbetsmiljö för dig ute hos uppdragsgivaren. </value>
+  </data>
+  <data name="GPL100.Text" xml:space="preserve">
+    <value>Hälsa och välmående</value>
+  </data>
+  <data name="VBM554.Text" xml:space="preserve">
+    <value>Vi är måna om din hälsa och erbjuder dig en rad olika förmåner, bland annat en heltäckande sjukvårdsförsäkring, tjänstepension etc. </value>
+  </data>
+  <data name="DTM100.Header" xml:space="preserve">
+    <value>Hur går rekryteringsprocessen till hos er?</value>
+  </data>
+  <data name="DTM100.Details" xml:space="preserve">
+    <value>För hela rekryteringsprocessen vänligen kika på :</value>
+  </data>
+  <data name="DTM101.Header" xml:space="preserve">
+    <value>Kan jag söka fler än ett jobb samtidigt?</value>
+  </data>
+  <data name="DTM101.Details" xml:space="preserve">
+    <value>Självklart kan du göra det. Det visar på engagemang och uppskattas av oss och våra kunder.</value>
+  </data>
+  <data name="DTM102.Header" xml:space="preserve">
+    <value>Vilka förmåner kan ni erbjuda mig som konsult?</value>
+  </data>
+  <data name="DTM103.Header" xml:space="preserve">
+    <value>Vad händer om jag blir av med ett uppdrag?</value>
+  </data>
+  <data name="DTM104.Header" xml:space="preserve">
+    <value>Har ni ett arbetsmiljöombud hos er?</value>
+  </data>
+  <data name="DTM102.Details" xml:space="preserve">
+    <value>Vi är måna om din hälsa och erbjuder dig en rad olika förmåner, bland annat tjänstepension, en heltäckande sjukvårdsförsäkring året om, friskvårdsbidrag etc.</value>
+  </data>
+  <data name="DTM103.Details" xml:space="preserve">
+    <value>Hos oss har du en fast månadslön även när du är mellan olika uppdrag. Vi erbjuder våra medarbetare kurser och certifieringar under tiden vi hittar nya uppdrag till dem samt att det alltid finns möjlighet att jobba med oss internt i organisationen.</value>
+  </data>
+  <data name="DTM104.Details" xml:space="preserve">
+    <value>Ja, vi har ett arbetsmiljöombud som arbetar för att säkerställa en säker och trygg arbetsmiljö för våra anställda. Välkommen att skicka din fråga till Septimus.</value>
+  </data>
+  <data name="BMP811.Text" xml:space="preserve">
+    <value>Nedan finner du ett urval av vanligt förekommande frågor. </value>
+  </data>
+  <data name="HOP879.Text" xml:space="preserve">
+    <value>Nedan finner du några av våra aktuella uppdrag. Hittar du inget uppdrag som matchar dig är du välkommen med din spontanasökan så utreder vi möjligheterna för just dig. </value>
+  </data>
+  <data name="GJP493.Header" xml:space="preserve">
+    <value>Kontakta oss</value>
+  </data>
+  <data name="BNM103.Header" xml:space="preserve">
+    <value>Om Septimus</value>
+  </data>
+  <data name="BMP811.Header" xml:space="preserve">
+    <value>Frågor och svar</value>
+  </data>
+  <data name="GJP493.Text" xml:space="preserve">
+    <value>Vill du komma i kontakt med oss? Hör gärna av dig.</value>
+  </data>
+  <data name="GTP871.Text" xml:space="preserve">
+    <value>Om Septimus</value>
+  </data>
+  <data name="DSW105.Text" xml:space="preserve">
+    <value>Lediga uppdrag</value>
+  </data>
+</root>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+     <script>
+    /*    const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light";
+
+        document.documentElement.style.backgroundColor = systemTheme === "dark" ? "#000028" : "#ffffff";
+        document.body.style.backgroundColor = systemTheme === "dark" ? "#000028" : "#ffffff";*/
+     </script>
+
+     <style>
+         :root {
+        background-color: #ffffff;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            background-color: #000028;
+        }
+    }
+
+    body {
+        background-color: inherit;
+    }
+
+
+     #uno-body {
+                    opacity: 0;
+                    transition: opacity 300ms ease-in;
+                }
+    </style>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <script type="text/javascript" src="./require.js"></script>
+    <script type="module" src="./uno-bootstrap.js"></script>
+
+    $(ADDITIONAL_CSS)
+    $(ADDITIONAL_HEAD)
+
+</head>
+<body>
+    <div id="uno-body" class="container-fluid uno-body">
+
+    </div>
+    <noscript>
+        <p>This application requires Javascript and WebAssembly to be enabled.</p>
+    </noscript>
+</body>
+<script>
+        function fadeIn() {
+            console.log('FadeIn');
+            const root = document.getElementById("uno-body");
+            if (!root) return;
+            root.style.opacity = "1";
+        }
+</script>
+</html>

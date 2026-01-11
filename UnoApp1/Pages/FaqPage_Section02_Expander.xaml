@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="UnoApp1.Views.FaqPage_Section02_Expander" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<StackPanel Background="{ThemeResource Background2}">
+		<Button Padding="24" HorizontalAlignment="Stretch" Click="Button_Click" Content="{x:Bind Header}" FontSize="26" Style="{StaticResource TransparentButton}" />
+		<TextBlock x:Name="PART_ContentPresenter" Margin="24" Style="{StaticResource MediumTextBlock}" Text="{x:Bind Details}" Visibility="{x:Bind DetailsVisibility, Mode=OneWay}" />
+		<VisualStateManager.VisualStateGroups>
+			<VisualStateGroup x:Name="AnimationStates">
+				<VisualState x:Name="Normal" />
+				<VisualState x:Name="Visible">
+					<Storyboard>
+						<DoubleAnimation Storyboard.TargetName="PART_ContentPresenter" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:1">
+							<DoubleAnimation.EasingFunction>
+								<BounceEase Bounces="3" Bounciness="2" EasingMode="EaseOut" />
+							</DoubleAnimation.EasingFunction>
+						</DoubleAnimation>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="Collapsed">
+					<Storyboard>
+						<DoubleAnimation Storyboard.TargetName="PART_ContentPresenter" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:1">
+							<DoubleAnimation.EasingFunction>
+								<BounceEase Bounces="3" Bounciness="2" EasingMode="EaseOut" />
+							</DoubleAnimation.EasingFunction>
+						</DoubleAnimation>
+					</Storyboard>
+				</VisualState>
+			</VisualStateGroup>
+		</VisualStateManager.VisualStateGroups>
+	</StackPanel>
+</UserControl>

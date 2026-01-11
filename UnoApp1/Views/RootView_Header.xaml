@@ -1,0 +1,80 @@
+﻿<UserControl x:Class="UnoApp1.Views.HeaderView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<Grid MaxWidth="1440" Padding="0,24,0,8" Background="{ThemeResource Background1}">
+		<Button HorizontalAlignment="Left" Click="HomeButton_Click" Style="{StaticResource TransparentButton}">
+			<Image Height="40" Source="/Images/Logo2.png" />
+		</Button>
+		<StackPanel x:Name="MenuPanel" HorizontalAlignment="Right" Orientation="Horizontal">
+			<Button x:Name="AboutButton" x:Uid="DPM876" Click="AboutButton_Click" Style="{StaticResource TransparentButton}" />
+			<Button x:Name="WhatWeDoButton" x:Uid="CKL781" Click="WhatWeDoButton_Click" Style="{StaticResource TransparentButton}" />
+			<Button x:Name="VacantAssignmentsButton" x:Uid="JKL126" Click="VacantAssignmentsButton_Click" Style="{StaticResource TransparentButton}" />
+			<Button x:Name="FaqButton" x:Uid="UIP710" Click="FaqButton_Click" Style="{StaticResource TransparentButton}" />
+			<Button x:Name="LanguageButton" x:Uid="HIP692" Click="LanguageButton_Click" Style="{StaticResource TransparentButton}" />
+			<Button x:Name="ContactUsButton" x:Uid="AZK234" Click="ContactUsButton_Click" Style="{StaticResource SolidButton}" />
+			<Button x:Name="MenuButton" Content="☰" FontSize="21" Style="{StaticResource TransparentButton}">
+				<Button.Flyout>
+					<Flyout x:Name="MenuFlyout">
+						<Flyout.FlyoutPresenterStyle>
+							<Style TargetType="FlyoutPresenter">
+								<Setter Property="Background" Value="{ThemeResource Background5}" />
+								<Setter Property="Padding" Value="20" />
+							</Style>
+						</Flyout.FlyoutPresenterStyle>
+						<StackPanel Width="300">
+							<Button x:Uid="DPM876" Padding="0,0,0,12" HorizontalAlignment="Stretch" Click="AboutButton_Click" Style="{StaticResource TransparentButton}" />
+							<Button x:Uid="CKL781" Padding="0,12,0,12" HorizontalAlignment="Stretch" Click="WhatWeDoButton_Click" Style="{StaticResource TransparentButton}" />
+							<Button x:Uid="JKL126" Padding="0,12,0,12" HorizontalAlignment="Stretch" Click="VacantAssignmentsButton_Click" Style="{StaticResource TransparentButton}" />
+							<Button x:Uid="UIP710" Padding="0,12,0,12" HorizontalAlignment="Stretch" Click="FaqButton_Click" Style="{StaticResource TransparentButton}" />
+							<Button x:Uid="HIP692" Padding="0,12,0,0" HorizontalAlignment="Stretch" Click="LanguageButton_Click" Style="{StaticResource TransparentButton}" />
+						</StackPanel>
+					</Flyout>
+				</Button.Flyout>
+			</Button>
+		</StackPanel>
+		<VisualStateManager.VisualStateGroups>
+			<VisualStateGroup>
+				<VisualState>
+					<VisualState.StateTriggers>
+						<AdaptiveTrigger MinWindowWidth="0" />
+					</VisualState.StateTriggers>
+					<VisualState.Setters>
+						<Setter Target="MenuPanel.Spacing" Value="20" />
+						<Setter Target="AboutButton.Visibility" Value="Collapsed" />
+						<Setter Target="WhatWeDoButton.Visibility" Value="Collapsed" />
+						<Setter Target="VacantAssignmentsButton.Visibility" Value="Collapsed" />
+						<Setter Target="FaqButton.Visibility" Value="Collapsed" />
+						<Setter Target="LanguageButton.Visibility" Value="Collapsed" />
+						<Setter Target="MenuButton.Visibility" Value="Visible" />
+					</VisualState.Setters>
+				</VisualState>
+				<VisualState>
+					<VisualState.StateTriggers>
+						<AdaptiveTrigger MinWindowWidth="499" />
+					</VisualState.StateTriggers>
+					<VisualState.Setters>
+						<Setter Target="MenuPanel.Spacing" Value="40" />
+						<Setter Target="AboutButton.Visibility" Value="Collapsed" />
+						<Setter Target="WhatWeDoButton.Visibility" Value="Collapsed" />
+						<Setter Target="VacantAssignmentsButton.Visibility" Value="Collapsed" />
+						<Setter Target="FaqButton.Visibility" Value="Collapsed" />
+						<Setter Target="LanguageButton.Visibility" Value="Collapsed" />
+						<Setter Target="MenuButton.Visibility" Value="Visible" />
+					</VisualState.Setters>
+				</VisualState>
+				<VisualState>
+					<VisualState.StateTriggers>
+						<AdaptiveTrigger MinWindowWidth="1208" />
+					</VisualState.StateTriggers>
+					<VisualState.Setters>
+						<Setter Target="MenuPanel.Spacing" Value="40" />
+						<Setter Target="AboutButton.Visibility" Value="Visible" />
+						<Setter Target="WhatWeDoButton.Visibility" Value="Visible" />
+						<Setter Target="VacantAssignmentsButton.Visibility" Value="Visible" />
+						<Setter Target="FaqButton.Visibility" Value="Visible" />
+						<Setter Target="LanguageButton.Visibility" Value="Visible" />
+						<Setter Target="MenuButton.Visibility" Value="Collapsed" />
+					</VisualState.Setters>
+				</VisualState>
+			</VisualStateGroup>
+		</VisualStateManager.VisualStateGroups>
+	</Grid>
+</UserControl>

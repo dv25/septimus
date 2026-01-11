@@ -1,0 +1,71 @@
+﻿<UserControl x:Class="UnoApp1.Views.WhatWeDoPage_Section04" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<Grid ColumnSpacing="32" RowSpacing="32">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="*" />
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+		</Grid.RowDefinitions>
+		<StackPanel x:Name="Panel1" Grid.Column="0">
+			<Border CornerRadius="12">
+				<Image Source="/Images/Jv1.jpg" />
+			</Border>
+			<TextBlock x:Uid="VVH106" Margin="0,24,0,0" Style="{StaticResource MediumMediumTextBlock}" />
+            <TextBlock x:Uid="MNI184" Margin="0,8,0,0" Style="{StaticResource MediumTextBlock}" />
+		</StackPanel>
+		<StackPanel x:Name="Panel2" Grid.Column="1">
+			<Border CornerRadius="12">
+				<Image Source="/Images/Jv2.jpg" />
+			</Border>
+            <TextBlock x:Uid="VVK199" Margin="0,24,0,0" Style="{StaticResource MediumMediumTextBlock}" />
+            <TextBlock x:Uid="FSE234" Margin="0,8,0,0" Style="{StaticResource MediumTextBlock}" />
+		</StackPanel>
+		<StackPanel x:Name="Panel3" Grid.Column="2">
+			<Border CornerRadius="12">
+				<Image Source="/Images/Jv3.jpg" />
+			</Border>
+            <TextBlock x:Uid="GOQ877" Margin="0,24,0,0" Style="{StaticResource MediumMediumTextBlock}" />
+            <TextBlock x:Uid="XKO558" Margin="0,8,0,0" Style="{StaticResource MediumTextBlock}" />
+		</StackPanel>
+		<VisualStateManager.VisualStateGroups>
+			<VisualStateGroup>
+				<VisualState>
+					<VisualState.StateTriggers>
+						<AdaptiveTrigger MinWindowWidth="0" />
+					</VisualState.StateTriggers>
+					<VisualState.Setters>
+						<Setter Target="Panel1.(Grid.Column)" Value="0" />
+						<Setter Target="Panel1.(Grid.ColumnSpan)" Value="3" />
+						<Setter Target="Panel1.(Grid.Row)" Value="0" />
+						<Setter Target="Panel2.(Grid.Column)" Value="0" />
+						<Setter Target="Panel2.(Grid.ColumnSpan)" Value="3" />
+						<Setter Target="Panel2.(Grid.Row)" Value="1" />
+						<Setter Target="Panel3.(Grid.Column)" Value="0" />
+						<Setter Target="Panel3.(Grid.ColumnSpan)" Value="3" />
+						<Setter Target="Panel3.(Grid.Row)" Value="2" />
+					</VisualState.Setters>
+				</VisualState>
+				<VisualState>
+					<VisualState.StateTriggers>
+						<AdaptiveTrigger MinWindowWidth="1008" />
+					</VisualState.StateTriggers>
+					<VisualState.Setters>
+						<Setter Target="Panel1.(Grid.Column)" Value="0" />
+						<Setter Target="Panel1.(Grid.ColumnSpan)" Value="1" />
+						<Setter Target="Panel1.(Grid.Row)" Value="0" />
+						<Setter Target="Panel2.(Grid.Column)" Value="1" />
+						<Setter Target="Panel2.(Grid.ColumnSpan)" Value="1" />
+						<Setter Target="Panel2.(Grid.Row)" Value="0" />
+						<Setter Target="Panel3.(Grid.Column)" Value="2" />
+						<Setter Target="Panel3.(Grid.ColumnSpan)" Value="1" />
+						<Setter Target="Panel3.(Grid.Row)" Value="0" />
+					</VisualState.Setters>
+				</VisualState>
+			</VisualStateGroup>
+		</VisualStateManager.VisualStateGroups>
+	</Grid>
+</UserControl>

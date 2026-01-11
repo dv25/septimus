@@ -1,0 +1,79 @@
+﻿<UserControl x:Class="UnoApp1.Views.FooterView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="using:UnoApp1">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="72" />
+		</Grid.RowDefinitions>
+		<Button x:Name="HomeButton" Grid.Row="0" Click="HomeButton_Click" Style="{StaticResource TransparentButton}">
+			<Image Height="40" Source="/Images/Logo2.png" />
+		</Button>
+		<local:CustomWrapPanel x:Name="PagesPanel">
+			<Button x:Name="ContactUsButton" x:Uid="AQP980" Click="ContactUsButton_Click" Style="{StaticResource TransparentButton}" />
+			<Button x:Name="FaqButton" x:Uid="UIP710" Click="FaqButton_Click" Style="{StaticResource TransparentButton}" />
+			<Button x:Name="VacantAssignmentsButton" x:Uid="JKL126" Click="VacantAssignmentsButton_Click" Style="{StaticResource TransparentButton}" />
+			<Button x:Name="WhatWeDoButton" x:Uid="CKL781" Click="WhatWeDoButton_Click" Style="{StaticResource TransparentButton}" />
+			<Button x:Name="AboutButton" x:Uid="DPM876" Click="AboutButton_Click" Style="{StaticResource TransparentButton}" />
+		</local:CustomWrapPanel>
+		<HyperlinkButton x:Name="PhoneButton" x:Uid="GHO998" Grid.Row="2" Margin="0,48,0,48" NavigateUri="tel:001234567" Style="{StaticResource MediumHyperlinkButton}" />
+		<StackPanel Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Center" Orientation="Horizontal" Spacing="16">
+			<HyperlinkButton NavigateUri="https://www.facebook.com">
+				<FontIcon Glyph="&#xf39e;" Style="{StaticResource SmallFontIconBrand}" />
+			</HyperlinkButton>
+			<HyperlinkButton NavigateUri="https://www.instagram.com">
+				<FontIcon Glyph="&#xf16d;" Style="{StaticResource SmallFontIconBrand}" />
+			</HyperlinkButton>
+			<HyperlinkButton NavigateUri="https://www.linkedin.com">
+				<FontIcon Glyph="&#xf0e1;" Style="{StaticResource SmallFontIconBrand}" />
+			</HyperlinkButton>
+		</StackPanel>
+		<StackPanel x:Name="PolicyPanel">
+			<HyperlinkButton Content="Cookieinställningar" NavigateUri="https://google.com" Style="{StaticResource MediumHyperlinkButton}" />
+			<HyperlinkButton Content="Cookiepolicy" NavigateUri="https://google.com" Style="{StaticResource MediumHyperlinkButton}" />
+			<HyperlinkButton Content="Integritetspolicy" NavigateUri="https://google.com" Style="{StaticResource MediumHyperlinkButton}" />
+		</StackPanel>
+		<VisualStateManager.VisualStateGroups>
+			<VisualStateGroup>
+				<VisualState>
+					<VisualState.StateTriggers>
+						<AdaptiveTrigger MinWindowWidth="0" />
+					</VisualState.StateTriggers>
+					<VisualState.Setters>
+						<Setter Target="PagesPanel.HorizontalAlignment" Value="Left" />
+						<Setter Target="PagesPanel.Direction" Value="BottomToTop" />
+						<Setter Target="PagesPanel.(Grid.Row)" Value="1" />
+						<Setter Target="PagesPanel.Margin" Value="0,40,0,0" />
+						<Setter Target="PagesPanel.ItemSpacingX" Value="0" />
+						<Setter Target="PagesPanel.ItemSpacingY" Value="16" />
+						<Setter Target="PolicyPanel.HorizontalAlignment" Value="Left" />
+						<Setter Target="PolicyPanel.Orientation" Value="Vertical" />
+						<Setter Target="PolicyPanel.(Grid.Row)" Value="4" />
+						<Setter Target="PolicyPanel.Margin" Value="0,20,0,0" />
+						<Setter Target="PolicyPanel.Spacing" Value="0" />
+					</VisualState.Setters>
+				</VisualState>
+				<VisualState>
+					<VisualState.StateTriggers>
+						<AdaptiveTrigger MinWindowWidth="499" />
+					</VisualState.StateTriggers>
+					<VisualState.Setters>
+						<Setter Target="PagesPanel.HorizontalAlignment" Value="Right" />
+						<Setter Target="PagesPanel.Direction" Value="RightToLeft" />
+						<Setter Target="PagesPanel.(Grid.Row)" Value="0" />
+						<Setter Target="PagesPanel.Margin" Value="300,0,0,0" />
+						<Setter Target="PagesPanel.ItemSpacingX" Value="40" />
+						<Setter Target="PagesPanel.ItemSpacingY" Value="16" />
+						<Setter Target="PolicyPanel.HorizontalAlignment" Value="Right" />
+						<Setter Target="PolicyPanel.Orientation" Value="Horizontal" />
+						<Setter Target="PolicyPanel.(Grid.Row)" Value="3" />
+						<Setter Target="PolicyPanel.Margin" Value="0" />
+						<Setter Target="PolicyPanel.Spacing" Value="40" />
+					</VisualState.Setters>
+				</VisualState>
+			</VisualStateGroup>
+		</VisualStateManager.VisualStateGroups>
+	</Grid>
+</UserControl>

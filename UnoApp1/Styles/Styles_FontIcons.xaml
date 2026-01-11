@@ -1,0 +1,23 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<Style TargetType="FontIcon">
+		<Setter Property="FontFamily" Value="{StaticResource DefaultFontIconThin}" />
+		<Setter Property="Foreground" Value="Red" />
+		<Setter Property="FontSize" Value="17" />
+		<Setter Property="HorizontalAlignment" Value="Left" />
+		<Setter Property="VerticalAlignment" Value="Top" />
+	</Style>
+	<Style x:Key="SmallFontIconBrand" TargetType="FontIcon">
+		<Setter Property="FontFamily" Value="{StaticResource DefaultFontIconBrandsRegular}" />
+        <Setter Property="Foreground" Value="{ThemeResource Foreground1}" />
+		<Setter Property="FontSize" Value="21" />
+		<Setter Property="HorizontalAlignment" Value="Left" />
+		<Setter Property="VerticalAlignment" Value="Top" />
+	</Style>
+	<Style x:Key="LargeFontIcon" TargetType="FontIcon">
+		<Setter Property="FontFamily" Value="{StaticResource DefaultFontIconThin}" />
+		<Setter Property="Foreground" Value="{ThemeResource Foreground1}" />
+		<Setter Property="FontSize" Value="54" />
+		<Setter Property="HorizontalAlignment" Value="Left" />
+		<Setter Property="VerticalAlignment" Value="Top" />
+	</Style>
+</ResourceDictionary>

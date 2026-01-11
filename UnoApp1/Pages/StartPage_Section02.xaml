@@ -1,0 +1,146 @@
+﻿<UserControl x:Class="UnoApp1.Views.StartPage_Section02" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition x:Name="ColumnDefinition1" />
+			<ColumnDefinition x:Name="ColumnDefinition2" />
+			<ColumnDefinition x:Name="ColumnDefinition3" />
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+		</Grid.RowDefinitions>
+		<Border x:Name="Content1" Background="{ThemeResource Background2}" CornerRadius="12">
+			<StackPanel x:Name="Panel1">
+				<FontIcon x:Name="Icon1" Glyph="&#xe32e;" Style="{StaticResource LargeFontIcon}" />
+				<TextBlock x:Name="Header1" x:Uid="HGP542" Style="{StaticResource MediumMediumTextBlock}" />
+				<TextBlock x:Name="Text1" x:Uid="GFI604" Style="{StaticResource SmallTextBlock}" />
+			</StackPanel>
+		</Border>
+        <Border x:Name="Content2" Background="{ThemeResource Background2}" CornerRadius="12">
+			<StackPanel x:Name="Panel2">
+				<FontIcon x:Name="Icon2" Glyph="&#xe1ca;" Style="{StaticResource LargeFontIcon}" />
+				<TextBlock x:Name="Header2" x:Uid="IOP372" Style="{StaticResource MediumMediumTextBlock}" />
+				<TextBlock x:Name="Text2" x:Uid="FDE768" Style="{StaticResource SmallTextBlock}" />
+			</StackPanel>
+		</Border>
+        <Border x:Name="Content3" Background="{ThemeResource Background2}" CornerRadius="12">
+			<StackPanel x:Name="Panel3">
+				<FontIcon x:Name="Icon3" Glyph="&#xe0b7;" Style="{StaticResource LargeFontIcon}" />
+				<TextBlock x:Name="Header3" x:Uid="YPK891" Style="{StaticResource MediumMediumTextBlock}" />
+				<TextBlock x:Name="Text3" x:Uid="FDO682" Style="{StaticResource SmallTextBlock}" />
+			</StackPanel>
+		</Border>
+		<VisualStateManager.VisualStateGroups>
+			<VisualStateGroup>
+				<VisualState>
+					<VisualState.StateTriggers>
+						<AdaptiveTrigger MinWindowWidth="0" />
+					</VisualState.StateTriggers>
+					<VisualState.Setters>
+						<Setter Target="ColumnDefinition1.Width" Value="*" />
+						<Setter Target="ColumnDefinition2.Width" Value="*" />
+						<Setter Target="ColumnDefinition3.Width" Value="0" />
+						<Setter Target="Content1.(Grid.Column)" Value="0" />
+						<Setter Target="Content2.(Grid.Column)" Value="1" />
+						<Setter Target="Content3.(Grid.Column)" Value="0" />
+						<Setter Target="Content3.(Grid.ColumnSpan)" Value="3" />
+						<Setter Target="Content3.(Grid.Row)" Value="1" />
+						<Setter Target="Content1.Margin" Value="0,0,0,0" />
+						<Setter Target="Content2.Margin" Value="4,0,0,0" />
+						<Setter Target="Content3.Margin" Value="0,4,0,0" />
+						<Setter Target="Panel1.Padding" Value="12,24" />
+						<Setter Target="Panel2.Padding" Value="12,24" />
+						<Setter Target="Panel3.Padding" Value="12,24" />
+						<Setter Target="Icon1.HorizontalAlignment" Value="Center" />
+						<Setter Target="Icon2.HorizontalAlignment" Value="Center" />
+						<Setter Target="Icon3.HorizontalAlignment" Value="Center" />
+						<Setter Target="Header1.TextAlignment" Value="Center" />
+						<Setter Target="Header2.TextAlignment" Value="Center" />
+						<Setter Target="Header3.TextAlignment" Value="Center" />
+						<Setter Target="Header1.Margin" Value="0,8,0,0" />
+						<Setter Target="Header2.Margin" Value="0,8,0,0" />
+						<Setter Target="Header3.Margin" Value="0,8,0,0" />
+						<Setter Target="Text1.TextAlignment" Value="Center" />
+						<Setter Target="Text2.TextAlignment" Value="Center" />
+						<Setter Target="Text3.TextAlignment" Value="Center" />
+						<Setter Target="Text1.Margin" Value="0,8,0,0" />
+						<Setter Target="Text2.Margin" Value="0,8,0,0" />
+						<Setter Target="Text3.Margin" Value="0,8,0,0" />
+					</VisualState.Setters>
+				</VisualState>
+				<VisualState>
+					<VisualState.StateTriggers>
+						<AdaptiveTrigger MinWindowWidth="499" />
+					</VisualState.StateTriggers>
+					<VisualState.Setters>
+						<Setter Target="ColumnDefinition1.Width" Value="*" />
+						<Setter Target="ColumnDefinition2.Width" Value="*" />
+						<Setter Target="ColumnDefinition3.Width" Value="*" />
+						<Setter Target="Content1.(Grid.Column)" Value="0" />
+						<Setter Target="Content2.(Grid.Column)" Value="1" />
+						<Setter Target="Content3.(Grid.Column)" Value="2" />
+						<Setter Target="Content3.(Grid.ColumnSpan)" Value="1" />
+						<Setter Target="Content3.(Grid.Row)" Value="0" />
+						<Setter Target="Content1.Margin" Value="0,0,0,0" />
+						<Setter Target="Content2.Margin" Value="8,0,0,0" />
+						<Setter Target="Content3.Margin" Value="8,0,0,0" />
+						<Setter Target="Panel1.Padding" Value="12,32" />
+						<Setter Target="Panel2.Padding" Value="12,32" />
+						<Setter Target="Panel3.Padding" Value="12,32" />
+						<Setter Target="Icon1.HorizontalAlignment" Value="Center" />
+						<Setter Target="Icon2.HorizontalAlignment" Value="Center" />
+						<Setter Target="Icon3.HorizontalAlignment" Value="Center" />
+						<Setter Target="Header1.TextAlignment" Value="Center" />
+						<Setter Target="Header2.TextAlignment" Value="Center" />
+						<Setter Target="Header3.TextAlignment" Value="Center" />
+						<Setter Target="Header1.Margin" Value="0,8,0,0" />
+						<Setter Target="Header2.Margin" Value="0,8,0,0" />
+						<Setter Target="Header3.Margin" Value="0,8,0,0" />
+						<Setter Target="Text1.TextAlignment" Value="Center" />
+						<Setter Target="Text2.TextAlignment" Value="Center" />
+						<Setter Target="Text3.TextAlignment" Value="Center" />
+						<Setter Target="Text1.Margin" Value="0,8,0,0" />
+						<Setter Target="Text2.Margin" Value="0,8,0,0" />
+						<Setter Target="Text3.Margin" Value="0,8,0,0" />
+					</VisualState.Setters>
+				</VisualState>
+				<VisualState>
+					<VisualState.StateTriggers>
+						<AdaptiveTrigger MinWindowWidth="1008" />
+					</VisualState.StateTriggers>
+					<VisualState.Setters>
+						<Setter Target="ColumnDefinition1.Width" Value="*" />
+						<Setter Target="ColumnDefinition2.Width" Value="*" />
+						<Setter Target="ColumnDefinition3.Width" Value="*" />
+						<Setter Target="Content1.(Grid.Column)" Value="0" />
+						<Setter Target="Content2.(Grid.Column)" Value="1" />
+						<Setter Target="Content3.(Grid.Column)" Value="2" />
+						<Setter Target="Content3.(Grid.ColumnSpan)" Value="1" />
+						<Setter Target="Content3.(Grid.Row)" Value="0" />
+						<Setter Target="Content1.Margin" Value="0,0,0,0" />
+						<Setter Target="Content2.Margin" Value="32,0,0,0" />
+						<Setter Target="Content3.Margin" Value="32,0,0,0" />
+						<Setter Target="Panel1.Padding" Value="56" />
+						<Setter Target="Panel2.Padding" Value="56" />
+						<Setter Target="Panel3.Padding" Value="56" />
+						<Setter Target="Icon1.HorizontalAlignment" Value="Left" />
+						<Setter Target="Icon2.HorizontalAlignment" Value="Left" />
+						<Setter Target="Icon3.HorizontalAlignment" Value="Left" />
+						<Setter Target="Header1.TextAlignment" Value="Left" />
+						<Setter Target="Header2.TextAlignment" Value="Left" />
+						<Setter Target="Header3.TextAlignment" Value="Left" />
+						<Setter Target="Header1.Margin" Value="0,24,0,0" />
+						<Setter Target="Header2.Margin" Value="0,24,0,0" />
+						<Setter Target="Header3.Margin" Value="0,24,0,0" />
+						<Setter Target="Text1.TextAlignment" Value="Left" />
+						<Setter Target="Text2.TextAlignment" Value="Left" />
+						<Setter Target="Text3.TextAlignment" Value="Left" />
+						<Setter Target="Text1.Margin" Value="0,16,0,0" />
+						<Setter Target="Text2.Margin" Value="0,16,0,0" />
+						<Setter Target="Text3.Margin" Value="0,16,0,0" />
+					</VisualState.Setters>
+				</VisualState>
+			</VisualStateGroup>
+		</VisualStateManager.VisualStateGroups>
+	</Grid>
+</UserControl>

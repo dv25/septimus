@@ -1,0 +1,8 @@
+﻿<Page x:Class="UnoApp1.Pages.FaqPage" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:uv="using:UnoApp1.Views">
+	<uv:Scrolly>
+		<uv:StartPage_Section01 x:Uid="BMP811" />
+		<uv:FaqPage_Section02 Margin="0,72,0,0" />
+		<uv:StartPage_Section06 Margin="0,128,0,0" />
+		<uv:StartPage_Section07 Margin="0,128,0,0" />
+	</uv:Scrolly>
+</Page>

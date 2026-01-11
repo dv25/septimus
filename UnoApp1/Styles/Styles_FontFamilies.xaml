@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<FontFamily x:Key="DefaultFontIconThin">ms-appx:///Fonts/Font Awesome 6 Pro-Thin-100.otf#Font Awesome 6 Pro Thin</FontFamily>
+	<FontFamily x:Key="DefaultFontIconRegular">ms-appx:///Fonts/Font Awesome 6 Pro-Regular-400.otf#Font Awesome 6 Pro Regular</FontFamily>
+	<FontFamily x:Key="DefaultFontIconBrandsRegular">ms-appx:///Fonts/Font Awesome 6 Brands-Regular-400.otf#Font Awesome 6 Brands Regular</FontFamily>
+	<FontFamily x:Key="DefaultFontThin">ms-appx:///Fonts/Moderat-Thin.ttf#Moderat-Thin</FontFamily>
+	<FontFamily x:Key="DefaultFontLight">ms-appx:///Fonts/Moderat-Light.ttf#Moderat-Light</FontFamily>
+	<FontFamily x:Key="DefaultFontRegular">ms-appx:///Fonts/Moderat-Regular.ttf#Moderat-Regular</FontFamily>
+	<FontFamily x:Key="DefaultFontMedium">ms-appx:///Fonts/Moderat-Medium.ttf#Moderat-Medium</FontFamily>
+	<FontFamily x:Key="DefaultFontBold">ms-appx:///Fonts/Moderat-Bold.ttf#Moderat-Bold</FontFamily>
+</ResourceDictionary>
